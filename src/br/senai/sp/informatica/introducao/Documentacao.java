@@ -1,8 +1,5 @@
 package br.senai.sp.informatica.introducao;
 
-
-import javax.swing.JOptionPane;
-
 /**
  * Essa classe visa ilustrar o uso e comentarios comuns 
  * de documentacao.
