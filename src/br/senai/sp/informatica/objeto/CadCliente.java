@@ -23,8 +23,10 @@ public class CadCliente extends JFrame{
 		Cliente novo= new Cliente();
 		String temp= JOptionPane.showInputDialog("informe o nome");
 		novo.setNome(temp);
+		
 		String temp2= JOptionPane.showInputDialog("informe o email");
 		novo.setEmail(temp2);
+		
 		String temp3= JOptionPane.showInputDialog("informe a Idade");
 		novo.setIdade(Integer.parseInt(temp3));
 		
@@ -33,11 +35,12 @@ public class CadCliente extends JFrame{
 		imprimir+=" Idade: \r\n"+novo.getIdade();
 		
 		l = new JLabel(imprimir); 
+		
 		p.add(l);
 		f.add(p); 
 		f.setSize(300, 300); 
 	  
-	        f.show();
+	    f.show();
 	}
 	
 	
