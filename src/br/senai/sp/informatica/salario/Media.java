@@ -17,58 +17,49 @@ public class Media extends JFrame{
     	
     	String val1;
     	String val2;
-    	
+    	String mensagem="";
         double	media=0;
        
-        val1= JOptionPane.showInputDialog("Informe 1º número");
+        val1= JOptionPane.showInputDialog("Informe 1º número de 0 a 100");
 	
-        val2= JOptionPane.showInputDialog("Informe 2º número");
+        val2= JOptionPane.showInputDialog("Informe 2º número de 0 a 100");
 	
         int x = Integer.parseInt(val1);
     	int y = Integer.parseInt(val2);
-        media= x+y / 2;
+        media= (x+y) / 2;
         
-     switch(media) {
-     case media < 60;
-     localizacao += "\nCamisas";
-
-     break
-     
-     
-     
-     
-     }
-	
+        
+        if(media<=60 ) {
+        	mensagem="Insuficiente";
+    	}else if(media >=61 && media<=80)
+    	{
+    		mensagem="Satisfatoria";
+    	}
+    	
+    	else
+    	if(media >=81 && media<=90) {
+    		mensagem="boa";
+    	}
+    	else
+        	if(media >90) {
+        		mensagem="Excelente";
+        	}
 //alterar  logo apos finalizar o switch	
 	
-	String imprimir1 ="\n Horas Trabalhadas: "+x;
-	String imprimir2="\n Salário por Hora: "+SalHora;
-	String imprimir3="\n Dependentes: "+Depe;
-	String imprimir4="\n Salário bruto: "+SalBrut;
-	String imprimir5="\n Desconto INSS: "+DescInss;
-	String imprimir6="\n Desconto IR: "+DescIr;
-	String imprimir7="\n Salario Liquido: "+sal;
-	
+	String imprimir1 =mensagem ;
+	String imprimir2="\n a media foi "+media;
 	
 	SH=new JLabel(imprimir1);
 	HT=new JLabel(imprimir2);
-	DP=new JLabel(imprimir3);
-	SB=new JLabel(imprimir4);
-	DI=new JLabel(imprimir5);
-	DR=new JLabel(imprimir6);
-	S=new JLabel(imprimir7);
 	
 	
 	p.add(SH);
 	p.add(HT);
-	p.add(DP);
-	p.add(SB);
-	p.add(SB);
-	p.add(DR);
-	p.add(S);
+	
 	
 	f.add(p); 
-	f.setSize(300, 300); 
+	f.setBounds(450, 350, 250, 250);
+	//f.setSize(200, 300); 
   
     f.show();
     
