@@ -20,9 +20,9 @@ public class Media extends JFrame{
     	
         double	media=0;
        
-        val1= JOptionPane.showInputDialog("Informe as Horas Trabalhadas");
+        val1= JOptionPane.showInputDialog("Informe 1º número");
 	
-        val2= JOptionPane.showInputDialog("Informe o Salário por Hora");
+        val2= JOptionPane.showInputDialog("Informe 2º número");
 	
         int x = Integer.parseInt(val1);
     	int y = Integer.parseInt(val2);
@@ -39,7 +39,7 @@ public class Media extends JFrame{
      
      }
 	
-	
+//alterar  logo apos finalizar o switch	
 	
 	String imprimir1 ="\n Horas Trabalhadas: "+x;
 	String imprimir2="\n Salário por Hora: "+SalHora;
