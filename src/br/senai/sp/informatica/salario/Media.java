@@ -7,6 +7,10 @@ import javax.swing.JPanel;
 
 public class Media extends JFrame{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	static JFrame f;
     public static void main(String[] args) {
     	f = new JFrame("panel"); 
@@ -27,13 +31,13 @@ public class Media extends JFrame{
         
         int x = Integer.parseInt(val1);
     	int y = Integer.parseInt(val2);
-<<<<<<< HEAD
+
     	
     	 media= (x+y) / 2;
         JOptionPane.showMessageDialog( null, media, 
                 "Resultado", 
                JOptionPane.INFORMATION_MESSAGE );  
-=======
+
         media= (x+y) / 2;
         
         
@@ -72,6 +76,5 @@ public class Media extends JFrame{
     f.show();
     
     
->>>>>>> 80c7febd28c2907dcf9ed75500c1dab1adbc9aaa
     }
 }

@@ -7,71 +7,61 @@ public class Mes {
 	 public static void main(String[] args){
 	       
 	        int mes;
-	      
-	       String val1= JOptionPane.showInputDialog("Digite o mês em número");
-	       mes = Integer.parseInt(val1);
+	        int x=1;
+	        String mostra="";
 	       
-	    
+	       
+	    while(x==1) {
+	    	String val1= JOptionPane.showInputDialog("Digite o mês em número");
+		       mes = Integer.parseInt(val1);
 	        switch(mes){
 	            case 1:
-	                JOptionPane.showMessageDialog( null, "Janeiro", 
-	                        "Resultado", 
-	                       JOptionPane.INFORMATION_MESSAGE );     
+	                mostra= "Janeiro";   
+	                x=2;
 	                break;
 	            case 2:
-	                JOptionPane.showMessageDialog( null, "Fevereiro", 
-	                        "Resultado", 
-	                       JOptionPane.INFORMATION_MESSAGE );     
+	            	 mostra= "Fevereiro"; 
+	                x=2;
 	                break;
 	            case 3:
-	                JOptionPane.showMessageDialog( null, "Março", 
-	                        "Resultado", 
-	                       JOptionPane.INFORMATION_MESSAGE );     
+	            	 mostra=  "Março"; 
+	                x=2;
 	                break;
 	            case 4:
-	                JOptionPane.showMessageDialog( null, "Abril", 
-	                        "Resultado", 
-	                       JOptionPane.INFORMATION_MESSAGE );     
+	            	 mostra= "Abril";    
+	                x=2;
 	                break;
 	            case 5:
-	                JOptionPane.showMessageDialog( null, "Maio", 
-	                        "Resultado", 
-	                       JOptionPane.INFORMATION_MESSAGE );     
+	            	 mostra= "Maio";     
+	                x=2;
 	                break;
 	            case 6:
-	                JOptionPane.showMessageDialog( null, "Junho", 
-	                        "Resultado", 
-	                       JOptionPane.INFORMATION_MESSAGE );     
+	            	 mostra= "Junho";  
+	                x=2;
 	                break;
 	            case 7:
-	                JOptionPane.showMessageDialog( null, "Julho", 
-	                        "Resultado", 
-	                       JOptionPane.INFORMATION_MESSAGE );     
+	            	 mostra=  "Julho";
+	                x=2; 
 	                break;
 	            case 8:
-	                JOptionPane.showMessageDialog( null, "Agosto", 
-	                        "Resultado", 
-	                       JOptionPane.INFORMATION_MESSAGE );     
+	            	 mostra= "Agosto"; 
+	                x=2;
 	                break;
 	                case 9:
-		                JOptionPane.showMessageDialog( null, "Setembro", 
-		                        "Resultado", 
-		                       JOptionPane.INFORMATION_MESSAGE );     
+	                	 mostra=  "Setembro"; 
+		                x=2;
 		                break;
 		            case 10:
-		                JOptionPane.showMessageDialog( null, "Outubro", 
-		                        "Resultado", 
-		                       JOptionPane.INFORMATION_MESSAGE );     
+		            	 mostra= "Outubro";
+		                x=2;
 		                break;
 		            case 11:
-		                JOptionPane.showMessageDialog( null, "Novembro", 
-		                        "Resultado", 
-		                       JOptionPane.INFORMATION_MESSAGE );     
+		            	 mostra= "Novembro";   
+		                x=2;
 		                break;
 		            case 12:
-		                JOptionPane.showMessageDialog( null, "Dezembro", 
-		                        "Resultado", 
-		                       JOptionPane.INFORMATION_MESSAGE );     
+		            	 mostra=  "Dezembro";
+		                x=2;
 		                break;
 	            default:
 	            	 JOptionPane.showMessageDialog( null, "Digite SOMENTE números entre 1 e 12", 
@@ -80,7 +70,10 @@ public class Mes {
 	                
 	                break;
 	        }
-	     
+	    }
+	    JOptionPane.showMessageDialog( null, mostra , 
+                "Resultado", 
+               JOptionPane.INFORMATION_MESSAGE ); 
 	    }
 	
 }
