@@ -8,13 +8,15 @@ public class Mes {
 	       
 	        int mes;
 	        int x=1;
-	        String mostra="";
+	        String mostra=""; //variavel para mostrar a resposta
 	       
 	       
-	    while(x==1) {
+	    while(x==1) //while repetição enquanto x=1, se o numero digitado for entre 1 a 12 atribui 2 a x e sai do loop
+	    {
 	    	String val1= JOptionPane.showInputDialog("Digite o mês em número");
 		       mes = Integer.parseInt(val1);
-	        switch(mes){
+	        switch(mes) //recebe o numero e verifica o mes
+	        {
 	            case 1:
 	                mostra= "Janeiro";   
 	                x=2;
@@ -63,14 +65,15 @@ public class Mes {
 		            	 mostra=  "Dezembro";
 		                x=2;
 		                break;
-	            default:
+	            default: //aqui não atribui valor nenhum a x para continuar o loop ate retornar numero verdadeiro do mes
 	            	 JOptionPane.showMessageDialog( null, "Digite SOMENTE números entre 1 e 12", 
 		                        "Resultado", 
 		                       JOptionPane.WARNING_MESSAGE );     
 	                
 	                break;
-	        }
-	    }
+	        }//fecha switch
+	    }//fecha while
+	    
 	    JOptionPane.showMessageDialog( null, mostra , 
                 "Resultado", 
                JOptionPane.INFORMATION_MESSAGE ); 
