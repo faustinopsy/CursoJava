@@ -51,7 +51,7 @@ public class Mes {
 	                	 mostra=  "Setembro"; 
 		                x=2;
 		                break;
-		            case 10:
+		            case 10: 
 		            	 mostra= "Outubro";
 		                x=2;
 		                break;
@@ -66,7 +66,7 @@ public class Mes {
 	            default:
 	            	 JOptionPane.showMessageDialog( null, "Digite SOMENTE números entre 1 e 12", 
 		                        "Resultado", 
-		                       JOptionPane.INFORMATION_MESSAGE );     
+		                       JOptionPane.WARNING_MESSAGE );     
 	                
 	                break;
 	        }
