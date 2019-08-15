@@ -1,5 +1,7 @@
 package br.senai.sp.informatica.salario;
 
+import java.awt.TextField;
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -12,6 +14,7 @@ public class Calcula extends JFrame{
     public static void main(String[] args) {
     	f = new JFrame("panel"); 
 		JLabel SH,HT,DP,SB,DI,DR,S; 
+		
 		
 		JPanel p = new JPanel(); 
     	
@@ -54,8 +57,6 @@ public class Calcula extends JFrame{
 	}
 	
 	
-	
-	
 	String imprimir1 ="\n Horas Trabalhadas: "+x;
 	String imprimir2="\n Salário por Hora: "+SalHora;
 	String imprimir3="\n Dependentes: "+Depe;
@@ -73,6 +74,7 @@ public class Calcula extends JFrame{
 	DR=new JLabel(imprimir6);
 	S=new JLabel(imprimir7);
 	
+
 	
 	p.add(SH);
 	p.add(HT);
@@ -81,6 +83,7 @@ public class Calcula extends JFrame{
 	p.add(SB);
 	p.add(DR);
 	p.add(S);
+	
 	
 	f.add(p); 
 	f.setSize(300, 300); 
