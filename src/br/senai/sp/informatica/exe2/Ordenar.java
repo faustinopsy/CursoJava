@@ -27,13 +27,13 @@ public class Ordenar {
 	}
 	Arrays.sort(vet);//ordena os numeros
     
-    for(int i=0; i<vet.length; i++) //percorre o vetor e concatena a string o
+    for(int i=0; i<vet.length; i++) //percorre o vetor e concatena a string o ordenando-os
     {
         o+=vet[i]+"-";
         
     }
     Arrays.sort(vet, Collections.reverseOrder());//inverte a ordem dos numeros
-    for(int i=0; i<vet.length; i++) //percorre o vetor e concatena a string d com os numeros invesos
+    for(int i=0; i<vet.length; i++) //percorre o vetor e concatena a string d com os numeros inversos
     {
         d+=vet[i]+"-";
         
