@@ -23,7 +23,7 @@ public class Ordenar {
 	{
 		val= JOptionPane.showInputDialog("Digite o Número ");
 		vet[i] =Integer.parseInt(val);
-		val2+=val+"-";
+		val2+="-"+val;
 	}
 	Arrays.sort(vet);//ordena os numeros
     
